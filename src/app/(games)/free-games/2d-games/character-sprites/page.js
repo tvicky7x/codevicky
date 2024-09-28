@@ -1,11 +1,11 @@
-import CharacterSprite from "@/components/GameComponents/2DGameComponents/CharacterSprite/CharacterSprite";
+import CharacterSpritesPage from "@/components/PageComponents/FreeGames/2DGames/CharacterSprites/CharacterSpritesPage";
 import React from "react";
 
 function page() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <CharacterSprite />
-    </div>
+    <>
+      <CharacterSpritesPage />
+    </>
   );
 }
 
