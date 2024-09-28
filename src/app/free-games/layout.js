@@ -2,23 +2,20 @@ import PlainNavigation from "@/components/Navigation/PlainNavigation/PlainNaviga
 import getComponentText from "@/utilities/commonFunction";
 import React from "react";
 
-export default function Home() {
+function layout({ children }) {
   const plainNavigationContent = getComponentText(
-    "navigation.plainNavigation.home"
+    "navigation.plainNavigation.game"
   );
 
   return (
-    <>
+    <div>
       <PlainNavigation
         navList={plainNavigationContent?.navList}
         navCTAButton={plainNavigationContent?.navCTAButton}
-        fixedNavbar={true}
       />
-      <div className="h-screen flex items-center justify-center">
-        <div>
-          <h1 className="font-medium text-6xl">CodeVicky</h1>
-        </div>
-      </div>
-    </>
+      {children}
+    </div>
   );
 }
+
+export default layout;
