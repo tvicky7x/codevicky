@@ -1,0 +1,22 @@
+{
+  "navigation": {
+    "plainNavigation": {
+      "home": {
+        "navList": [{ "link": "freeGames", "para": "games" }],
+        "navCTAButton": {
+          "link": "https://www.linkedin.com/in/codevicky/",
+          "para": "contact me",
+          "target": "_blank"
+        }
+      },
+      "game": {
+        "navList": [{ "link": "2dGames", "para": "2D games" }],
+        "navCTAButton": {
+          "link": "https://www.linkedin.com/in/codevicky/",
+          "para": "Contact Me",
+          "target": "_blank"
+        }
+      }
+    }
+  }
+}
