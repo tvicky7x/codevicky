@@ -18,5 +18,18 @@
         }
       }
     }
+  },
+  "free-games": {
+    "2d-games": {
+      "heading": "2D Games I Build",
+      "2d-gameList": [
+        {
+          "head": "Character Sprites",
+          "para": "You will find list of all the characters sprites for my 2d games here.",
+          "link": "characterSprites",
+          "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
+        }
+      ]
+    }
   }
 }

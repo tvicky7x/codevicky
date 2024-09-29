@@ -1,3 +1,4 @@
+import TwoDGamesPage from "@/components/PageComponents/FreeGames/2DGames/TwoDGamesPage";
 import staticRoutes from "@/utilities/staticRoutes";
 import Link from "next/link";
 import React from "react";
@@ -5,7 +6,7 @@ import React from "react";
 function page() {
   return (
     <div>
-      <Link href={staticRoutes?.characterSprites}>Character Sprites</Link>
+      <TwoDGamesPage />
     </div>
   );
 }
