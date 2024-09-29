@@ -12,6 +12,7 @@ function layout({ children }) {
       <PlainNavigation
         navList={plainNavigationContent?.navList}
         navCTAButton={plainNavigationContent?.navCTAButton}
+        fixedNavbar={true}
       />
       {children}
     </div>

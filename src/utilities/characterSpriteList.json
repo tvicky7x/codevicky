@@ -1,0 +1,327 @@
+[
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Pawn",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Pawn",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1152,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 6,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Pawn_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Pawn_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Pawn_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Pawn_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "build",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "cut",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "lift",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "lift and run",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Torch",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Goblins/Troops/Torch",
+      "spriteImageWidth": 1344,
+      "spriteImageHeight": 960,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 5,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Torch_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Torch_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Torch_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Torch_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 7
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "Torch attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "Torch attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "Torch attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "TNT",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Goblins/Troops/TNT",
+      "spriteImageWidth": 1344,
+      "spriteImageHeight": 576,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 3,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/TNT_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/TNT_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/TNT_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/TNT_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "throw",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 7
+        }
+      ]
+    }
+  },
+  {
+    "name": "Barrel",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Goblins/Troops/Barrel",
+      "spriteImageWidth": 768,
+      "spriteImageHeight": 768,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 6,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Barrel_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Barrel_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Barrel_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Barrel_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "slient",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 1
+        },
+        {
+          "actionName": "hop out",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "stand",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 1
+        },
+        {
+          "actionName": "hop in",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 3
+        },
+        {
+          "actionName": "explode",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 3
+        }
+      ]
+    }
+  }
+]

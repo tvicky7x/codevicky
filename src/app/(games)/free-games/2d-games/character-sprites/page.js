@@ -1,7 +1,12 @@
+import CharacterSpritesPage from "@/components/PageComponents/FreeGames/2DGames/CharacterSprites/CharacterSpritesPage";
 import React from "react";
 
 function page() {
-  return <div>page</div>;
+  return (
+    <>
+      <CharacterSpritesPage />
+    </>
+  );
 }
 
 export default page;

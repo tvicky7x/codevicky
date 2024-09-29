@@ -11,12 +11,12 @@ function PlainNavigation({
     <nav
       className={`${
         fixedNavbar && "fixed top-0 w-full"
-      } backdrop-blur-md flex items-center justify-between px-20 py-3.5 border-b border-slate-300 `}
+      } flex items-center justify-between border-b border-slate-300 px-10 py-3.5 backdrop-blur-md`}
     >
-      <Link href={staticRoutes?.home} className="font-semibold text-2xl">
+      <Link href={staticRoutes?.home} className="text-2xl font-semibold">
         CodeVicky
       </Link>
-      <ul className="flex items-center capitalize gap-x-4">
+      <ul className="flex items-center gap-x-4 capitalize">
         {navList?.map((item, index) => {
           return (
             <li key={index}>
@@ -36,7 +36,7 @@ function PlainNavigation({
       {navCTAButton && (
         <Link
           target={navCTAButton?.target}
-          className={`bg-black text-white rounded-md px-5 py-2 capitalize ${
+          className={`rounded-md bg-black px-5 py-2 capitalize text-white ${
             navCTAButton?.disable && "pointer-events-none"
           }`}
           href={staticRoutes[`${navCTAButton?.link}`] || navCTAButton?.link}
