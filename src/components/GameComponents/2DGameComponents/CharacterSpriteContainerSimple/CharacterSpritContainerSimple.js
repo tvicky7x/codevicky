@@ -103,7 +103,9 @@ function CharacterSpritContainerSimple({ spriteObject }) {
       </div>
       <div className="flex flex-col items-center gap-y-3">
         <div className="text-center text-black">
-          <h2 className="text-2xl font-medium">{spriteObject?.name}</h2>
+          <h2 className="text-2xl font-medium capitalize">
+            {spriteObject?.name}
+          </h2>
         </div>
         <div className="flex w-48 flex-col items-center gap-y-3">
           <select
