@@ -13,11 +13,11 @@ function CharacterSpritesPage() {
   }
 
   return (
-    <div className="grid h-screen grid-flow-row grid-rows-12">
-      <div className="row-span-8 flex items-center justify-center">
+    <div className="flex h-screen flex-col">
+      <div className="flex h-full items-center justify-center">
         <CharacterSpritContainerSimple spriteObject={spriteObject} />
       </div>
-      <div className="row-span-4">
+      <div className="">
         <CharacterSpriteScrollContainerSimple
           handleOnClickSpriteObject={handleOnClickSpriteObject}
           characterSpriteList={characterSpriteList}

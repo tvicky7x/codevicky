@@ -123,5 +123,755 @@
         }
       ]
     }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
+  },
+  {
+    "name": "Knight",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+      "spriteImageWidth": 1152,
+      "spriteImageHeight": 1536,
+      "maxSpriteImageWidthDivide": 6,
+      "spriteHeightDivide": 8,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Warrior_Purple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Warrior_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "sword attack 6",
+          "spriteAnimationPosition": 7,
+          "spriteWidthDivide": 6
+        }
+      ]
+    }
+  },
+  {
+    "name": "Archer",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Archer",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 1334,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 7,
+      "frameSpeed": 5,
+      "spriteVariation": [
+        { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
+        { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
+        {
+          "variationName": "Purple",
+          "spriteImageUrl": "/Purple/Archer_Purlple.png"
+        },
+        {
+          "variationName": "Yellow",
+          "spriteImageUrl": "/Yellow/Archer_Yellow.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteAnimationPosition": 0,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "run",
+          "spriteAnimationPosition": 1,
+          "spriteWidthDivide": 6
+        },
+        {
+          "actionName": "bow attack 1",
+          "spriteAnimationPosition": 2,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 2",
+          "spriteAnimationPosition": 3,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 3",
+          "spriteAnimationPosition": 4,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 4",
+          "spriteAnimationPosition": 5,
+          "spriteWidthDivide": 8
+        },
+        {
+          "actionName": "bow attack 5",
+          "spriteAnimationPosition": 6,
+          "spriteWidthDivide": 8
+        }
+      ]
+    }
   }
 ]

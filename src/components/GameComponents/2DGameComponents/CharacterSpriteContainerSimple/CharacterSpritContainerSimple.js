@@ -91,7 +91,7 @@ function CharacterSpritContainerSimple({ spriteObject }) {
   }, [spriteObject]);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center justify-center">
       <div className="bg-white">
         <CharacterSprite
           {...spriteObject?.spriteDetail}
