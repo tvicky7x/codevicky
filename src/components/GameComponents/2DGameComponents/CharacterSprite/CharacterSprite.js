@@ -1,75 +1,93 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 function CharacterSprite({
-  spritImageUrl = "",
-  spritImageWidth = 0,
-  spritImageHeight = 0,
-  spritWidthDivide = 0,
-  spritHeightDivide = 0,
-  spritAnimationPosition = 0,
+  spriteImageUrl = "",
+  spriteImageBaseUrl = "",
+  spriteImageWidth = 0,
+  spriteImageHeight = 0,
+  maxSpriteImageWidthDivide = 0,
+  spriteWidthDivide = 0,
+  spriteHeightDivide = 0,
+  spriteAnimationPosition = 0,
   frameSpeed = 6,
+  testProp = "",
 }) {
-  // sprit Sizing Variable
-  const individualSpritWidth = spritImageWidth / spritWidthDivide;
-  const individualSpritHeight = spritImageHeight / spritHeightDivide;
+  // sprite Sizing Variable
+  const individualSpriteWidth = spriteImageWidth / maxSpriteImageWidthDivide;
+  const individualSpriteHeight = spriteImageHeight / spriteHeightDivide;
 
-  // Sprit maker functions
+  // ref
+  const canvasRef = useRef();
+
+  // sprite maker functions
   function characterSpriteMaker() {
-    const canvas = document.getElementById("character-sprite-maker");
-    canvas.width = individualSpritWidth;
-    canvas.height = individualSpritHeight;
+    const canvas = canvasRef.current;
+    canvas.width = individualSpriteWidth;
+    canvas.height = individualSpriteHeight;
     /**@type {CanvasRenderingContext2D} */
     const ctx = canvas.getContext("2d");
 
-    // sprit Image
-    const characterSpritImage = new Image();
-    characterSpritImage.src = spritImageUrl;
+    // sprite Image
+    const characterSpriteImage = new Image();
+    characterSpriteImage.src = spriteImageBaseUrl + spriteImageUrl;
 
-    // Incrementing Variable
-    let frameX = 0;
-    let frameIncrementSpeed = 0;
+    // Ensure image is loaded before drawing
+    characterSpriteImage.onload = function () {
+      // Incrementing Variable
+      let frameX = 0;
+      let frameIncrementSpeed = 0;
 
-    function animate() {
-      ctx.clearRect(0, 0, individualSpritWidth, individualSpritHeight);
-      // ctx.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh);
+      function animate() {
+        ctx.clearRect(0, 0, individualSpriteWidth, individualSpriteHeight);
 
-      let position =
-        Math.floor(frameIncrementSpeed / frameSpeed) % spritWidthDivide;
-      frameX = individualSpritWidth * position;
-      ctx.drawImage(
-        characterSpritImage,
-        frameX,
-        spritAnimationPosition * individualSpritHeight,
-        individualSpritWidth,
-        individualSpritHeight,
-        0,
-        0,
-        individualSpritWidth,
-        individualSpritHeight,
-      );
-      frameIncrementSpeed++;
-      requestAnimationFrame(animate);
-    }
-    animate();
+        let position =
+          Math.floor(frameIncrementSpeed / frameSpeed) % spriteWidthDivide;
+        frameX = individualSpriteWidth * position;
+        ctx.drawImage(
+          characterSpriteImage,
+          frameX,
+          spriteAnimationPosition * individualSpriteHeight,
+          individualSpriteWidth,
+          individualSpriteHeight,
+          0,
+          0,
+          individualSpriteWidth,
+          individualSpriteHeight,
+        );
+        frameIncrementSpeed++;
+        requestAnimationFrame(animate);
+      }
+      animate(); // Start animation only after the image is loaded
+    };
+
+    // Handle image loading errors
+    characterSpriteImage.onerror = function () {
+      console.error("Failed to load sprite image:", characterSpriteImage.src);
+    };
   }
 
   useEffect(() => {
-    characterSpriteMaker();
+    if (canvasRef.current) {
+      characterSpriteMaker();
+    }
   }, [
-    spritImageUrl,
-    spritImageWidth,
-    spritImageHeight,
-    spritWidthDivide,
-    spritHeightDivide,
-    spritAnimationPosition,
+    spriteImageUrl,
+    spriteImageBaseUrl,
+    spriteImageWidth,
+    spriteImageHeight,
+    maxSpriteImageWidthDivide,
+    spriteWidthDivide,
+    spriteHeightDivide,
+    spriteAnimationPosition,
     frameSpeed,
   ]);
 
   return (
     <canvas
-      style={{ width: individualSpritWidth, height: individualSpritHeight }}
+      style={{ width: individualSpriteWidth, height: individualSpriteHeight }}
       id="character-sprite-maker"
+      ref={canvasRef}
     ></canvas>
   );
 }

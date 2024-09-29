@@ -1,98 +1,144 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CharacterSprite from "../CharacterSprite/CharacterSprite";
 
-const spritObject = {
-  name: "Blue Knight",
-  spriteDetail: {
-    spritImageUrl:
-      "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior/Blue/Warrior_Blue.png",
-    spritImageWidth: 1152,
-    spritImageHeight: 1536,
-    spritWidthDivide: 6,
-    spritHeightDivide: 8,
-    frameSpeed: 5,
-    spriteMap: [
-      {
-        id: "idle",
-        actionName: "idle",
-        spritAnimationPosition: 0,
-      },
-      { id: "run", actionName: "run", spritAnimationPosition: 1 },
-      {
-        id: "swordAttack1",
-        actionName: "sword attack 1",
-        spritAnimationPosition: 2,
-      },
-      {
-        id: "swordAttack2",
-        actionName: "sword attack 2",
-        spritAnimationPosition: 3,
-      },
-      {
-        id: "swordAttack3",
-        actionName: "sword attack 3",
-        spritAnimationPosition: 4,
-      },
-      {
-        id: "swordAttack4",
-        actionName: "sword attack 4",
-        spritAnimationPosition: 5,
-      },
-      {
-        id: "swordAttack5",
-        actionName: "sword attack 5",
-        spritAnimationPosition: 6,
-      },
-      {
-        id: "swordAttack6",
-        actionName: "sword attack 6",
-        spritAnimationPosition: 7,
-      },
-    ],
-  },
-};
+// const spriteObject = {
+//   name: "Knight",
+//   spriteDetail: {
+//     spriteImageBaseUrl:
+//       "/gameAssets/2dAssets/tinySwordsAssets/Factions/Knights/Troops/Warrior",
+//     spriteImageWidth: 1152,
+//     spriteImageHeight: 1536,
+//     maxSpriteImageWidthDivide: 6,
+//     spriteWidthDivide: 6,
+//     spriteHeightDivide: 8,
+//     frameSpeed: 5,
+//     spriteVariation: [
+//       { variationName: "Blue", spriteImageUrl: "/Blue/Warrior_Blue.png" },
+//       { variationName: "Red", spriteImageUrl: "/Red/Warrior_Red.png" },
+//       {
+//         variationName: "Purple",
+//         spriteImageUrl: "/Purple/Warrior_Purple.png",
+//       },
+//       {
+//         variationName: "Yellow",
+//         spriteImageUrl: "/Yellow/Warrior_Yellow.png",
+//       },
+//     ],
+//     spriteMap: [
+//       {
+//         actionName: "idle",
+//         spriteAnimationPosition: 0,
+//       },
+//       { actionName: "run", spriteAnimationPosition: 1 },
+//       {
+//         actionName: "sword attack 1",
+//         spriteAnimationPosition: 2,
+//       },
+//       {
+//         actionName: "sword attack 2",
+//         spriteAnimationPosition: 3,
+//       },
+//       {
+//         actionName: "sword attack 3",
+//         spriteAnimationPosition: 4,
+//       },
+//       {
+//         actionName: "sword attack 4",
+//         spriteAnimationPosition: 5,
+//       },
+//       {
+//         actionName: "sword attack 5",
+//         spriteAnimationPosition: 6,
+//       },
+//       {
+//         actionName: "sword attack 6",
+//         spriteAnimationPosition: 7,
+//       },
+//     ],
+//   },
+// };
 
-function CharacterSpritContainerSimple({}) {
+function CharacterSpritContainerSimple({ spriteObject }) {
   const [currentSpritAction, setCurrentSpritAction] = useState(
-    spritObject?.spriteDetail?.spriteMap[0],
+    spriteObject?.spriteDetail?.spriteMap[0],
+  );
+  const [spriteVariation, setSpriteVariation] = useState(
+    spriteObject?.spriteDetail?.spriteVariation[0],
   );
 
   //   Onchange Select Sprite Action
-  function selectOnChangeHandler(selectedValue) {
-    setCurrentSpritAction(() => {
-      return spritObject?.spriteDetail?.spriteMap?.filter(
-        (item) => item.id === selectedValue,
-      )[0];
-    });
+  function selectOnChangeHandler(selectedValue, key) {
+    if (key === "actions") {
+      setCurrentSpritAction(() => {
+        return spriteObject?.spriteDetail?.spriteMap?.filter(
+          (item) => item?.actionName === selectedValue,
+        )[0];
+      });
+    } else if (key === "variations") {
+      setSpriteVariation(() => {
+        return spriteObject?.spriteDetail?.spriteVariation?.filter(
+          (item) => item?.variationName === selectedValue,
+        )[0];
+      });
+    }
   }
 
+  useEffect(() => {
+    if (spriteObject) {
+      setCurrentSpritAction(spriteObject?.spriteDetail?.spriteMap[0]);
+      setSpriteVariation(spriteObject?.spriteDetail?.spriteVariation[0]);
+    }
+  }, [spriteObject]);
+
   return (
-    <div className="mx-auto flex max-w-sm flex-col items-center space-y-4 rounded-lg bg-black p-6 shadow-lg">
-      <div className="rounded-md bg-white">
+    <div className="flex flex-col items-center">
+      <div className="bg-white">
         <CharacterSprite
-          {...spritObject?.spriteDetail}
-          spritAnimationPosition={currentSpritAction?.spritAnimationPosition}
+          {...spriteObject?.spriteDetail}
+          spriteAnimationPosition={currentSpritAction?.spriteAnimationPosition}
+          spriteImageUrl={spriteVariation?.spriteImageUrl}
+          spriteWidthDivide={currentSpritAction?.spriteWidthDivide}
+          testProp="bow"
         />
       </div>
-      <div className="text-center text-white">
-        <h2 className="text-xl font-medium">{spritObject?.name}</h2>
-      </div>
-      <div className="flex w-full flex-col items-center gap-y-4">
-        <select
-          value={currentSpritAction?.id}
-          onChange={(e) => selectOnChangeHandler(e.target.value)}
-          className="w-full rounded-lg bg-black p-2 capitalize text-white ring-[1.5px] ring-white/30 focus:outline-none focus:ring-2 focus:ring-white"
-        >
-          {spritObject?.spriteDetail?.spriteMap?.map((item, index) => (
-            <option
-              key={index}
-              value={item?.id}
-              className="bg-black capitalize text-white"
-            >
-              {item?.actionName}
-            </option>
-          ))}
-        </select>
+      <div className="flex flex-col items-center gap-y-3">
+        <div className="text-center text-black">
+          <h2 className="text-2xl font-medium">{spriteObject?.name}</h2>
+        </div>
+        <div className="flex w-48 flex-col items-center gap-y-3">
+          <select
+            value={spriteVariation?.variationName}
+            onChange={(e) =>
+              selectOnChangeHandler(e.target.value, "variations")
+            }
+            className="w-full rounded-md bg-slate-200 p-2 capitalize text-black focus:outline-none"
+          >
+            {spriteObject?.spriteDetail?.spriteVariation?.map((item, index) => (
+              <option
+                key={index}
+                value={item?.variationName}
+                className="capitalize"
+              >
+                {item?.variationName}
+              </option>
+            ))}
+          </select>
+          <select
+            value={currentSpritAction?.actionName}
+            onChange={(e) => selectOnChangeHandler(e.target.value, "actions")}
+            className="w-full rounded-md bg-slate-200 p-2 capitalize text-black focus:outline-none"
+          >
+            {spriteObject?.spriteDetail?.spriteMap?.map((item, index) => (
+              <option
+                key={index}
+                value={item?.actionName}
+                className="capitalize"
+              >
+                {item?.actionName}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
     </div>
   );
