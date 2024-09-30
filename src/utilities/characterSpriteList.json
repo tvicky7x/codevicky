@@ -7,7 +7,6 @@
       "spriteImageHeight": 1536,
       "maxSpriteImageWidthDivide": 6,
       "spriteHeightDivide": 8,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/Warrior_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/Warrior_Red.png" },
@@ -23,43 +22,43 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 1",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 2",
-          "spriteAnimationPosition": 3,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 3",
-          "spriteAnimationPosition": 4,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 4",
-          "spriteAnimationPosition": 5,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 5",
-          "spriteAnimationPosition": 6,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "sword attack 6",
-          "spriteAnimationPosition": 7,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         }
       ]
     }
@@ -72,7 +71,6 @@
       "spriteImageHeight": 1334,
       "maxSpriteImageWidthDivide": 8,
       "spriteHeightDivide": 7,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/Archer_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/Archer_Red.png" },
@@ -88,38 +86,38 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "bow attack 1",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 8
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         },
         {
           "actionName": "bow attack 2",
-          "spriteAnimationPosition": 3,
-          "spriteWidthDivide": 8
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         },
         {
           "actionName": "bow attack 3",
-          "spriteAnimationPosition": 4,
-          "spriteWidthDivide": 8
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         },
         {
           "actionName": "bow attack 4",
-          "spriteAnimationPosition": 5,
-          "spriteWidthDivide": 8
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         },
         {
           "actionName": "bow attack 5",
-          "spriteAnimationPosition": 6,
-          "spriteWidthDivide": 8
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         }
       ]
     }
@@ -132,7 +130,6 @@
       "spriteImageHeight": 1152,
       "maxSpriteImageWidthDivide": 6,
       "spriteHeightDivide": 6,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/Pawn_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/Pawn_Red.png" },
@@ -148,33 +145,33 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "build",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "cut",
-          "spriteAnimationPosition": 3,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "lift",
-          "spriteAnimationPosition": 4,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "lift and run",
-          "spriteAnimationPosition": 5,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         }
       ]
     }
@@ -187,7 +184,6 @@
       "spriteImageHeight": 960,
       "maxSpriteImageWidthDivide": 7,
       "spriteHeightDivide": 5,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/Torch_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/Torch_Red.png" },
@@ -203,28 +199,28 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 7
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "Torch attack 1",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "Torch attack 2",
-          "spriteAnimationPosition": 3,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "Torch attack 3",
-          "spriteAnimationPosition": 4,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         }
       ]
     }
@@ -237,7 +233,6 @@
       "spriteImageHeight": 576,
       "maxSpriteImageWidthDivide": 7,
       "spriteHeightDivide": 3,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/TNT_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/TNT_Red.png" },
@@ -253,18 +248,18 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "throw",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 7
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
         }
       ]
     }
@@ -277,7 +272,6 @@
       "spriteImageHeight": 768,
       "maxSpriteImageWidthDivide": 6,
       "spriteHeightDivide": 6,
-      "frameSpeed": 5,
       "spriteVariation": [
         { "variationName": "Blue", "spriteImageUrl": "/Blue/Barrel_Blue.png" },
         { "variationName": "Red", "spriteImageUrl": "/Red/Barrel_Red.png" },
@@ -293,33 +287,321 @@
       "spriteMap": [
         {
           "actionName": "slient",
-          "spriteAnimationPosition": 0,
-          "spriteWidthDivide": 1
+          "spriteWidthDivide": 1,
+          "frameSpeed": 5
         },
         {
           "actionName": "hop out",
-          "spriteAnimationPosition": 1,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "stand",
-          "spriteAnimationPosition": 2,
-          "spriteWidthDivide": 1
+          "spriteWidthDivide": 1,
+          "frameSpeed": 5
         },
         {
           "actionName": "hop in",
-          "spriteAnimationPosition": 3,
-          "spriteWidthDivide": 6
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 4,
-          "spriteWidthDivide": 3
+          "spriteWidthDivide": 3,
+          "frameSpeed": 5
         },
         {
           "actionName": "explode",
-          "spriteAnimationPosition": 5,
-          "spriteWidthDivide": 3
+          "spriteWidthDivide": 3,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Tree",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Resources",
+      "spriteImageWidth": 768,
+      "spriteImageHeight": 576,
+      "maxSpriteImageWidthDivide": 4,
+      "spriteHeightDivide": 3,
+      "spriteVariation": [
+        {
+          "variationName": "Tree",
+          "spriteImageUrl": "/Trees/Tree.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Idle",
+          "spriteWidthDivide": 4,
+          "frameSpeed": 5
+        },
+        {
+          "actionName": "Cutting",
+          "spriteWidthDivide": 2,
+          "frameSpeed": 20
+        },
+        {
+          "actionName": "cut",
+          "spriteWidthDivide": 1,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "very Small Stone",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Terrain/Water",
+      "spriteImageWidth": 1024,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "very Small Stone",
+          "spriteImageUrl": "/Rocks/Rocks_01.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Small Stone",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Terrain/Water",
+      "spriteImageWidth": 1024,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Small Stone",
+          "spriteImageUrl": "/Rocks/Rocks_02.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Medium Stone",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Terrain/Water",
+      "spriteImageWidth": 1024,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Medium Stone",
+          "spriteImageUrl": "/Rocks/Rocks_03.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Large Stone",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Terrain/Water",
+      "spriteImageWidth": 1024,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Large Stone",
+          "spriteImageUrl": "/Rocks/Rocks_04.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "idle",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fire",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Effects",
+      "spriteImageWidth": 896,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        { "variationName": "Fire", "spriteImageUrl": "/Fire/Fire.png" }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Fire",
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Gold Bag",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Resources/Resources",
+      "spriteImageWidth": 896,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Gold Bag",
+          "spriteImageUrl": "/G_Spawn.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Spawn",
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Meat",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Resources/Resources",
+      "spriteImageWidth": 896,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Meat",
+          "spriteImageUrl": "/M_Spawn.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Spawn",
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Wooden Log",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Resources/Resources",
+      "spriteImageWidth": 896,
+      "spriteImageHeight": 128,
+      "maxSpriteImageWidthDivide": 7,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Wooden Log",
+          "spriteImageUrl": "/W_Spawn.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Spawn",
+          "spriteWidthDivide": 7,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Sheep",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Resources",
+      "spriteImageWidth": 1024,
+      "spriteImageHeight": 256,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 2,
+      "spriteVariation": [
+        {
+          "variationName": "Sheep",
+          "spriteImageUrl": "/Sheep/HappySheep_All.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Idle",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
+        },
+        {
+          "actionName": "Hop",
+          "spriteWidthDivide": 6,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Explosion",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Effects",
+      "spriteImageWidth": 1728,
+      "spriteImageHeight": 192,
+      "maxSpriteImageWidthDivide": 9,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Explosion",
+          "spriteImageUrl": "/Explosion/Explosions.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Explosion",
+          "spriteWidthDivide": 9,
+          "frameSpeed": 5
+        }
+      ]
+    }
+  },
+  {
+    "name": "Water Foam",
+    "spriteDetail": {
+      "spriteImageBaseUrl": "/gameAssets/2dAssets/tinySwordsAssets/Terrain/Water",
+      "spriteImageWidth": 1536,
+      "spriteImageHeight": 192,
+      "maxSpriteImageWidthDivide": 8,
+      "spriteHeightDivide": 1,
+      "spriteVariation": [
+        {
+          "variationName": "Water Foam",
+          "spriteImageUrl": "/Foam/Foam.png"
+        }
+      ],
+      "spriteMap": [
+        {
+          "actionName": "Water Foam",
+          "spriteWidthDivide": 8,
+          "frameSpeed": 5
         }
       ]
     }

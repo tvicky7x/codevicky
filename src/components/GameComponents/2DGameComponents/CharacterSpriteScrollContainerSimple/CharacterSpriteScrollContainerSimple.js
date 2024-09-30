@@ -18,13 +18,8 @@ function CharacterSpriteScrollContainerSimple({
               >
                 <CharacterSprite
                   {...item?.spriteDetail}
-                  spriteAnimationPosition={0}
-                  spriteWidthDivide={
-                    item?.spriteDetail?.spriteMap[0]?.spriteWidthDivide
-                  }
-                  spriteImageUrl={
-                    item?.spriteDetail?.spriteVariation[0]?.spriteImageUrl
-                  }
+                  actionPosition={0}
+                  variationPosition={0}
                 />
               </button>
             );

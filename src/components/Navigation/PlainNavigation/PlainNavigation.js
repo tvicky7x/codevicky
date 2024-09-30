@@ -36,7 +36,7 @@ function PlainNavigation({
       {navCTAButton && (
         <Link
           target={navCTAButton?.target}
-          className={`rounded-md bg-black px-5 py-2 capitalize text-white ${
+          className={`hidden rounded-md bg-black px-5 py-2 capitalize text-white md:block ${
             navCTAButton?.disable && "pointer-events-none"
           }`}
           href={staticRoutes[`${navCTAButton?.link}`] || navCTAButton?.link}
