@@ -2,15 +2,11 @@
 import React, { useEffect, useRef } from "react";
 
 function CharacterSprite({
-  spriteImageUrl = "",
   spriteImageBaseUrl = "",
   spriteImageWidth = 0,
   spriteImageHeight = 0,
   maxSpriteImageWidthDivide = 0,
-  // spriteWidthDivide = 0,
   spriteHeightDivide = 0,
-  spriteAnimationPosition = 0,
-  frameSpeed = 6,
   spriteMap = [],
   spriteVariation = [],
   actionPosition = 0,
@@ -48,8 +44,9 @@ function CharacterSprite({
         ctx.clearRect(0, 0, individualSpriteWidth, individualSpriteHeight);
 
         let position =
-          Math.floor(frameIncrementSpeed / frameSpeed) %
-          spriteMap[`${actionPosition}`].spriteWidthDivide;
+          Math.floor(
+            frameIncrementSpeed / spriteMap[`${actionPosition}`].frameSpeed,
+          ) % spriteMap[`${actionPosition}`].spriteWidthDivide;
         frameX = individualSpriteWidth * position;
         ctx.drawImage(
           characterSpriteImage,
@@ -79,18 +76,15 @@ function CharacterSprite({
       characterSpriteMaker();
     }
   }, [
-    spriteImageUrl,
     spriteImageBaseUrl,
     spriteImageWidth,
     spriteImageHeight,
     maxSpriteImageWidthDivide,
+    spriteHeightDivide,
     spriteMap,
     spriteVariation,
     actionPosition,
     variationPosition,
-    spriteHeightDivide,
-    spriteAnimationPosition,
-    frameSpeed,
   ]);
 
   return (

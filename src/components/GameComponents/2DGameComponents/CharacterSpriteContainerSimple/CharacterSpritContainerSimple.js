@@ -72,6 +72,13 @@ function CharacterSpritContainerSimple({ spriteObject }) {
     }
   }
 
+  useEffect(() => {
+    return () => {
+      setCurrentActionPosition(0);
+      setCurrentVariationPosition(0);
+    };
+  }, [spriteObject]);
+
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="bg-white">
