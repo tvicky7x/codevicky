@@ -23,42 +23,34 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 1",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 2",
-          "spriteAnimationPosition": 3,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 3",
-          "spriteAnimationPosition": 4,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 4",
-          "spriteAnimationPosition": 5,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 5",
-          "spriteAnimationPosition": 6,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "sword attack 6",
-          "spriteAnimationPosition": 7,
           "spriteWidthDivide": 6
         }
       ]
@@ -88,37 +80,30 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "bow attack 1",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 8
         },
         {
           "actionName": "bow attack 2",
-          "spriteAnimationPosition": 3,
           "spriteWidthDivide": 8
         },
         {
           "actionName": "bow attack 3",
-          "spriteAnimationPosition": 4,
           "spriteWidthDivide": 8
         },
         {
           "actionName": "bow attack 4",
-          "spriteAnimationPosition": 5,
           "spriteWidthDivide": 8
         },
         {
           "actionName": "bow attack 5",
-          "spriteAnimationPosition": 6,
           "spriteWidthDivide": 8
         }
       ]
@@ -148,32 +133,26 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "build",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "cut",
-          "spriteAnimationPosition": 3,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "lift",
-          "spriteAnimationPosition": 4,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "lift and run",
-          "spriteAnimationPosition": 5,
           "spriteWidthDivide": 6
         }
       ]
@@ -203,27 +182,22 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 7
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "Torch attack 1",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "Torch attack 2",
-          "spriteAnimationPosition": 3,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "Torch attack 3",
-          "spriteAnimationPosition": 4,
           "spriteWidthDivide": 6
         }
       ]
@@ -253,17 +227,14 @@
       "spriteMap": [
         {
           "actionName": "idle",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "throw",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 7
         }
       ]
@@ -293,32 +264,26 @@
       "spriteMap": [
         {
           "actionName": "slient",
-          "spriteAnimationPosition": 0,
           "spriteWidthDivide": 1
         },
         {
           "actionName": "hop out",
-          "spriteAnimationPosition": 1,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "stand",
-          "spriteAnimationPosition": 2,
           "spriteWidthDivide": 1
         },
         {
           "actionName": "hop in",
-          "spriteAnimationPosition": 3,
           "spriteWidthDivide": 6
         },
         {
           "actionName": "run",
-          "spriteAnimationPosition": 4,
           "spriteWidthDivide": 3
         },
         {
           "actionName": "explode",
-          "spriteAnimationPosition": 5,
           "spriteWidthDivide": 3
         }
       ]

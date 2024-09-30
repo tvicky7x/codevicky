@@ -7,10 +7,14 @@ function CharacterSprite({
   spriteImageWidth = 0,
   spriteImageHeight = 0,
   maxSpriteImageWidthDivide = 0,
-  spriteWidthDivide = 0,
+  // spriteWidthDivide = 0,
   spriteHeightDivide = 0,
   spriteAnimationPosition = 0,
   frameSpeed = 6,
+  spriteMap = [],
+  spriteVariation = [],
+  actionPosition = 0,
+  variationPosition = 0,
   testProp = "",
 }) {
   // sprite Sizing Variable
@@ -30,7 +34,9 @@ function CharacterSprite({
 
     // sprite Image
     const characterSpriteImage = new Image();
-    characterSpriteImage.src = spriteImageBaseUrl + spriteImageUrl;
+    characterSpriteImage.src =
+      spriteImageBaseUrl +
+      spriteVariation[`${variationPosition}`].spriteImageUrl;
 
     // Ensure image is loaded before drawing
     characterSpriteImage.onload = function () {
@@ -42,12 +48,13 @@ function CharacterSprite({
         ctx.clearRect(0, 0, individualSpriteWidth, individualSpriteHeight);
 
         let position =
-          Math.floor(frameIncrementSpeed / frameSpeed) % spriteWidthDivide;
+          Math.floor(frameIncrementSpeed / frameSpeed) %
+          spriteMap[`${actionPosition}`].spriteWidthDivide;
         frameX = individualSpriteWidth * position;
         ctx.drawImage(
           characterSpriteImage,
           frameX,
-          spriteAnimationPosition * individualSpriteHeight,
+          actionPosition * individualSpriteHeight,
           individualSpriteWidth,
           individualSpriteHeight,
           0,
@@ -77,7 +84,10 @@ function CharacterSprite({
     spriteImageWidth,
     spriteImageHeight,
     maxSpriteImageWidthDivide,
-    spriteWidthDivide,
+    spriteMap,
+    spriteVariation,
+    actionPosition,
+    variationPosition,
     spriteHeightDivide,
     spriteAnimationPosition,
     frameSpeed,

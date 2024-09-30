@@ -59,45 +59,26 @@ import CharacterSprite from "../CharacterSprite/CharacterSprite";
 // };
 
 function CharacterSpritContainerSimple({ spriteObject }) {
-  const [currentSpritAction, setCurrentSpritAction] = useState(
-    spriteObject?.spriteDetail?.spriteMap[0],
-  );
-  const [spriteVariation, setSpriteVariation] = useState(
-    spriteObject?.spriteDetail?.spriteVariation[0],
-  );
+  const [currentActionPosition, setCurrentActionPosition] = useState(0);
+  const [currentVariationPosition, setCurrentVariationPosition] = useState(0);
 
   //   Onchange Select Sprite Action
   function selectOnChangeHandler(selectedValue, key) {
     if (key === "actions") {
-      setCurrentSpritAction(() => {
-        return spriteObject?.spriteDetail?.spriteMap?.filter(
-          (item) => item?.actionName === selectedValue,
-        )[0];
-      });
+      console.log(selectedValue);
+      setCurrentActionPosition(selectedValue);
     } else if (key === "variations") {
-      setSpriteVariation(() => {
-        return spriteObject?.spriteDetail?.spriteVariation?.filter(
-          (item) => item?.variationName === selectedValue,
-        )[0];
-      });
+      setCurrentVariationPosition(selectedValue);
     }
   }
-
-  useEffect(() => {
-    if (spriteObject) {
-      setCurrentSpritAction(spriteObject?.spriteDetail?.spriteMap[0]);
-      setSpriteVariation(spriteObject?.spriteDetail?.spriteVariation[0]);
-    }
-  }, [spriteObject]);
 
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="bg-white">
         <CharacterSprite
           {...spriteObject?.spriteDetail}
-          spriteAnimationPosition={currentSpritAction?.spriteAnimationPosition}
-          spriteImageUrl={spriteVariation?.spriteImageUrl}
-          spriteWidthDivide={currentSpritAction?.spriteWidthDivide}
+          variationPosition={currentVariationPosition}
+          actionPosition={currentActionPosition}
           testProp="bow"
         />
       </div>
@@ -109,33 +90,25 @@ function CharacterSpritContainerSimple({ spriteObject }) {
         </div>
         <div className="flex w-48 flex-col items-center gap-y-3">
           <select
-            value={spriteVariation?.variationName}
+            value={currentVariationPosition}
             onChange={(e) =>
               selectOnChangeHandler(e.target.value, "variations")
             }
             className="w-full rounded-md bg-slate-200 p-2 capitalize text-black focus:outline-none"
           >
             {spriteObject?.spriteDetail?.spriteVariation?.map((item, index) => (
-              <option
-                key={index}
-                value={item?.variationName}
-                className="capitalize"
-              >
+              <option key={index} value={index} className="capitalize">
                 {item?.variationName}
               </option>
             ))}
           </select>
           <select
-            value={currentSpritAction?.actionName}
+            value={currentActionPosition}
             onChange={(e) => selectOnChangeHandler(e.target.value, "actions")}
             className="w-full rounded-md bg-slate-200 p-2 capitalize text-black focus:outline-none"
           >
             {spriteObject?.spriteDetail?.spriteMap?.map((item, index) => (
-              <option
-                key={index}
-                value={item?.actionName}
-                className="capitalize"
-              >
+              <option key={index} value={index} className="capitalize">
                 {item?.actionName}
               </option>
             ))}
