@@ -65,7 +65,6 @@ function CharacterSpritContainerSimple({ spriteObject }) {
   //   Onchange Select Sprite Action
   function selectOnChangeHandler(selectedValue, key) {
     if (key === "actions") {
-      console.log(selectedValue);
       setCurrentActionPosition(selectedValue);
     } else if (key === "variations") {
       setCurrentVariationPosition(selectedValue);

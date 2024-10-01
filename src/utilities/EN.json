@@ -5,7 +5,7 @@
         "navList": [{ "link": "freeGames", "para": "games" }],
         "navCTAButton": {
           "link": "https://www.linkedin.com/in/codevicky/",
-          "para": "contact me",
+          "para": "Connect With Me",
           "target": "_blank"
         }
       },
@@ -13,7 +13,7 @@
         "navList": [{ "link": "2dGames", "para": "2D games" }],
         "navCTAButton": {
           "link": "https://www.linkedin.com/in/codevicky/",
-          "para": "Contact Me",
+          "para": "Connect With Me",
           "target": "_blank"
         }
       }
@@ -27,6 +27,12 @@
           "head": "Character Sprites",
           "para": "You will find list of all the characters sprites for my 2d games here.",
           "link": "characterSprites",
+          "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
+        },
+        {
+          "head": "Snake Game",
+          "para": "Awesome small game inspired by retro Snake game.",
+          "link": "snakeGame",
           "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
         }
       ]
