@@ -1,6 +1,6 @@
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import "./globals.css";
-import { Roboto } from "next/font/google";
+// import { Roboto } from "next/font/google";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -13,10 +13,24 @@ import { Roboto } from "next/font/google";
 //   weight: "100 900",
 // });
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+const afacadFlux = localFont({
+  src: [
+    { path: "./fonts/AfacadFlux-Black.ttf", weight: "900" },
+    { path: "./fonts/AfacadFlux-Bold.ttf", weight: "700" },
+    { path: "./fonts/AfacadFlux-ExtraBold.ttf", weight: "800" },
+    { path: "./fonts/AfacadFlux-ExtraLight.ttf", weight: "200" },
+    { path: "./fonts/AfacadFlux-Light.ttf", weight: "300" },
+    { path: "./fonts/AfacadFlux-Medium.ttf", weight: "500" },
+    { path: "./fonts/AfacadFlux-Regular.ttf", weight: "400" },
+    { path: "./fonts/AfacadFlux-SemiBold.ttf", weight: "600" },
+    { path: "./fonts/AfacadFlux-Thin.ttf", weight: "100" },
+  ],
 });
+
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "400", "500", "700", "900"],
+// });
 
 export const metadata = {
   title: "Create Next App",
@@ -28,7 +42,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        className={roboto.className}
+        // className={roboto.className}
+        className={`${afacadFlux.className} antialiased`}
       >
         {children}
       </body>

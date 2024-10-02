@@ -15,16 +15,16 @@ function TwoDGamesPage() {
         }}
         className="flex h-[300px] items-center justify-center bg-cover bg-center md:h-[500px]"
       >
-        <h1 className="text-shadow-md text-center text-4xl font-bold uppercase text-white sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <h1 className="text-center text-4xl font-bold uppercase text-white text-shadow-md sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
           {content.heading}
         </h1>
       </div>
-      <div className="mt-10 px-4 md:mt-14 md:px-10">
+      <div className="mb-20 mt-10 px-4 md:mt-14 md:px-10">
         <ul className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {content["2d-gameList"].map((item, index) => {
             return (
               <li key={index}>
-                <Link href={staticRoutes[`${item?.link}`]}>
+                <Link href={staticRoutes[`${item?.link}`]} prefetch={false}>
                   <div className="flex flex-col items-center gap-x-3 rounded-md border-2 border-black p-3 shadow-lg sm:flex-row">
                     <Image
                       width={100}
@@ -37,7 +37,7 @@ function TwoDGamesPage() {
                       <h3 className="text-lg font-medium capitalize md:text-xl lg:text-2xl">
                         {item?.head}
                       </h3>
-                      <p className="mt-2 text-sm text-slate-500 md:text-base">
+                      <p className="mt-2 text-sm !leading-tight text-slate-500 md:text-base">
                         {item?.para}
                       </p>
                     </div>

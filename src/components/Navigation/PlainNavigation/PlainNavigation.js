@@ -11,7 +11,7 @@ function PlainNavigation({
     <nav
       className={`${
         fixedNavbar && "fixed top-0 w-full"
-      } flex items-center justify-between border-b border-slate-300 px-10 py-3.5 backdrop-blur-md`}
+      } flex items-center justify-between border-b border-slate-300 bg-white px-10 py-3.5 backdrop-blur-md`}
     >
       <Link href={staticRoutes?.home} className="text-2xl font-semibold">
         CodeVicky
@@ -23,7 +23,7 @@ function PlainNavigation({
               <Link
                 href={staticRoutes[`${item?.link}`] || item?.link}
                 target={item?.target}
-                className={`font-medium ${
+                className={`text-lg font-medium ${
                   item?.disable && "pointer-events-none"
                 }`}
               >
