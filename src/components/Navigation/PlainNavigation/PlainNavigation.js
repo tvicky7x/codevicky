@@ -10,8 +10,8 @@ function PlainNavigation({
   return (
     <nav
       className={`${
-        fixedNavbar && "sticky top-0 w-full"
-      } flex items-center justify-between border-b border-slate-300 px-10 py-3.5 backdrop-blur-md`}
+        fixedNavbar && "fixed top-0 w-full"
+      } flex items-center justify-between border-b border-slate-300 bg-white px-10 py-3.5 backdrop-blur-md`}
     >
       <Link href={staticRoutes?.home} className="text-2xl font-semibold">
         CodeVicky
