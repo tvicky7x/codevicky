@@ -30,9 +30,9 @@
           "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
         },
         {
-          "head": "Snake Game",
-          "para": "Awesome small game inspired by retro Snake game.",
-          "link": "snakeGame",
+          "head": "Character Movement and Collision",
+          "para": "Its a prototype for character movement in a grid and Collision.",
+          "link": "characterMovement",
           "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
         }
       ]

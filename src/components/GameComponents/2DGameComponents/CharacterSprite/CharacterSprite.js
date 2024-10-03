@@ -32,7 +32,7 @@ function CharacterSprite({
     const characterSpriteImage = new Image();
     characterSpriteImage.src =
       spriteImageBaseUrl +
-      spriteVariation[`${variationPosition}`].spriteImageUrl;
+      spriteVariation[`${variationPosition}`]?.spriteImageUrl;
 
     // Ensure image is loaded before drawing
     characterSpriteImage.onload = function () {

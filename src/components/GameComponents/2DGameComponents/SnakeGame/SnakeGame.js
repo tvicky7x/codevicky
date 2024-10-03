@@ -99,24 +99,8 @@ class SnakeGamePlay {
       } else if (this.lastKey() === right) {
         nextX += this.tileSize;
       }
-
-      // Border checking conditions
-      if (this.position.x >= this.canvasWidth) {
-        this.position.x = 0;
-        this.destinationPosition.x = 0;
-      } else if (this.position.x < 0) {
-        this.position.x = this.canvasWidth - this.tileSize;
-        this.destinationPosition.x = this.canvasWidth - this.tileSize;
-      } else if (this.position.y >= this.canvasHeight) {
-        this.position.y = 0;
-        this.destinationPosition.y = 0;
-      } else if (this.position.y < 0) {
-        this.position.y = this.canvasHeight - this.tileSize;
-        this.destinationPosition.y = this.canvasHeight - this.tileSize;
-      } else {
-        this.destinationPosition.x = nextX;
-        this.destinationPosition.y = nextY;
-      }
+      this.destinationPosition.x = nextX;
+      this.destinationPosition.y = nextY;
     }
   }
   moveTowards(destinationPosition, speed) {
@@ -164,8 +148,8 @@ function SnakeGame() {
 
     // building snake
     snakeGame.position = {
-      x: 1 * snakeGame.tileSize,
-      y: 1 * snakeGame.tileSize,
+      x: 0 * snakeGame.tileSize,
+      y: 0 * snakeGame.tileSize,
     };
 
     function animate() {
