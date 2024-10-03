@@ -45,8 +45,8 @@ function CharacterSprite({
 
         let position =
           Math.floor(
-            frameIncrementSpeed / spriteMap[`${actionPosition}`].frameSpeed,
-          ) % spriteMap[`${actionPosition}`].spriteWidthDivide;
+            frameIncrementSpeed / spriteMap[`${actionPosition}`]?.frameSpeed,
+          ) % spriteMap[`${actionPosition}`]?.spriteWidthDivide;
         frameX = individualSpriteWidth * position;
         ctx.drawImage(
           characterSpriteImage,

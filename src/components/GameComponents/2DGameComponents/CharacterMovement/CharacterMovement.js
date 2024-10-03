@@ -5,7 +5,7 @@ const up = "UP";
 const down = "DOWN";
 const left = "LEFT";
 const right = "RIGHT";
-class SnakeGamePlay {
+class CharacterMovementPlay {
   constructor({ tileSize, rows, columns, position }) {
     this.tileSize = tileSize;
     this.rows = rows;
@@ -129,49 +129,49 @@ class SnakeGamePlay {
 }
 
 // React Component ============= >>
-function SnakeGame() {
-  const snakeRef = useRef(null);
+function CharacterMovement() {
+  const characterMovementRef = useRef(null);
 
   // animate snake function
   function animateSnakeGame() {
-    const canvas = snakeRef.current;
+    const canvas = characterMovementRef.current;
     // variables/
-    const snakeGame = new SnakeGamePlay({
+    const characterMovement = new CharacterMovementPlay({
       tileSize: 32,
       columns: 15,
-      rows: 20,
+      rows: 15,
     });
-    canvas.width = snakeGame.canvasWidth;
-    canvas.height = snakeGame.canvasHeight;
+    canvas.width = characterMovement.canvasWidth;
+    canvas.height = characterMovement.canvasHeight;
     /**@type {CanvasRenderingContext2D} */
     const ctx = canvas.getContext("2d");
 
     // building snake
-    snakeGame.position = {
-      x: 0 * snakeGame.tileSize,
-      y: 0 * snakeGame.tileSize,
+    characterMovement.position = {
+      x: 0 * characterMovement.tileSize,
+      y: 0 * characterMovement.tileSize,
     };
 
     function animate() {
       requestAnimationFrame(animate);
-      snakeGame.update();
-      snakeGame.buildSnake(ctx);
-      snakeGame.buildGrid(ctx);
+      characterMovement.update();
+      characterMovement.buildSnake(ctx);
+      characterMovement.buildGrid(ctx);
     }
     requestAnimationFrame(animate);
   }
 
   useEffect(() => {
-    if (snakeRef.current) {
+    if (characterMovementRef.current) {
       animateSnakeGame();
     }
   }, []);
 
   return (
     <div>
-      <canvas id="snake-game" className="" ref={snakeRef} />
+      <canvas id="snake-game" className="" ref={characterMovementRef} />
     </div>
   );
 }
 
-export default SnakeGame;
+export default CharacterMovement;
