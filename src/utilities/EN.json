@@ -1,41 +1,18 @@
 {
   "navigation": {
     "plainNavigation": {
-      "home": {
-        "navList": [{ "link": "freeGames", "para": "games" }],
-        "navCTAButton": {
-          "link": "https://www.linkedin.com/in/codevicky/",
-          "para": "Connect With Me",
-          "target": "_blank"
-        }
-      },
-      "game": {
-        "navList": [{ "link": "2dGames", "para": "2D games" }],
-        "navCTAButton": {
-          "link": "https://www.linkedin.com/in/codevicky/",
-          "para": "Connect With Me",
-          "target": "_blank"
-        }
+      "navList": [
+        { "link": "animations", "para": "animations" },
+        { "link": "games", "para": "games" }
+      ],
+      "navCTAButton": {
+        "link": "https://www.linkedin.com/in/codevicky/",
+        "para": "Connect With Me",
+        "target": "_blank"
       }
     }
   },
-  "free-games": {
-    "2d-games": {
-      "heading": "2D Games I Build",
-      "2d-gameList": [
-        {
-          "head": "Character Sprites",
-          "para": "You will find list of all the characters sprites for my 2d games here.",
-          "link": "characterSprites",
-          "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
-        },
-        {
-          "head": "Character Movement and Collision",
-          "para": "Its a prototype for character movement in a grid and Collision.",
-          "link": "characterMovement",
-          "imageUrl": "/gameAssets/2dAssets/gameListAssets/character-sprites-list-image.png"
-        }
-      ]
-    }
+  "games": {
+    "gridList": [{ "head": "character sprite" }]
   }
 }
