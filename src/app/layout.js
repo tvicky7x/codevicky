@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import PlainNavigation from "@/components/Navigation/PlainNavigation/PlainNavigation";
 // import { Roboto } from "next/font/google";
 
 // const geistSans = localFont({
@@ -45,6 +46,7 @@ export default function RootLayout({ children }) {
         // className={roboto.className}
         className={`${afacadFlux.className} antialiased`}
       >
+        <PlainNavigation fixedNavbar={false} />
         {children}
       </body>
     </html>
